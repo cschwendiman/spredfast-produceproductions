@@ -1,0 +1,21 @@
+table#leaderboard {
+    border-collapse: collapse;
+    width: 300px;
+}
+
+table#leaderboard tr {
+    border-bottom: 1px solid black;
+}
+
+table#leaderboard td.produce-name {
+    font-weight: bold;
+}
+
+table#leaderboard td.mentions {
+    text-align: right;
+    font-size: small;
+}
+
+table#leaderboard td.mentions span {
+    color: red;
+}
