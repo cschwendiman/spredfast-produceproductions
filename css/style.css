@@ -1,21 +1,51 @@
-table#leaderboard {
-    border-collapse: collapse;
-    width: 300px;
+body {
+    background-image: url('../background.png');
+    text-align: center;
+    font-family: sans-serif;
 }
 
-table#leaderboard tr {
-    border-bottom: 1px solid black;
+h1 {
+    color: #BEBEBE;
+    text-shadow: 0 0 80px #000000;
+    font-size: 50px;
+}
+
+table#leaderboard {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(29, 29, 29, 0.85);
+    color: #FFFFFF;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+table#leaderboard tr + tr td {
+    border-top: 1px solid #363636;
+}
+
+table#leaderboard td {
+    padding: 0px 20px;
+    height: 40px;
+    vertical-align: middle;
 }
 
 table#leaderboard td.produce-name {
+    text-align: left;
     font-weight: bold;
+    font-size: 16px;
 }
 
 table#leaderboard td.mentions {
     text-align: right;
-    font-size: small;
+    font-size: 13px;
+    line-height: 16px;
+    color: #BEBEBE;
 }
 
 table#leaderboard td.mentions span {
-    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    color: #88000F;
+    padding-right: 5px;
 }

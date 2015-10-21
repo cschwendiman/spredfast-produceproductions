@@ -24,11 +24,14 @@ var ProduceProductions = {
             produce.sort(function (a, b) {
                 return a.count < b.count;
             });
-            var newtable = "";
+            produce.splice(5);
+            var newtable = "<table id='leaderboard'>";
             $.each(produce, function (i, p) {
                 newtable += "<tr><td class='produce-name'>" + p.name + "</td><td class='mentions'><span>" + p.count + "</span> Mentions</td></tr>";
             });
-            $(this.leaderboard_selector).html(newtable);
+            newtable += "</table>";
+            $(this.leaderboard_selector).remove();
+            $('h1').after(newtable);
         }
 
     }
