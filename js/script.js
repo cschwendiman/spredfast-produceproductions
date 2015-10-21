@@ -32,6 +32,7 @@ var ProduceProductions = {
             newtable += "</table>";
             $(this.leaderboard_selector).remove();
             $('h1').after(newtable);
+            this.produce_stats = {};
         }
 
     }
